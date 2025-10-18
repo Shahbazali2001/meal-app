@@ -1,7 +1,12 @@
 import React from 'react'
-// import { useParams } from 'next/navigation'
 
-const MealDetailsPage = ({params}) => {
+interface Props {
+    params: {
+        mealSlug: string
+    }
+}
+
+const MealDetailsPage : React.FC<Props> = ({params}) => {
 
     const {mealSlug} = params
 
